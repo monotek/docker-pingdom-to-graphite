@@ -1,0 +1,16 @@
+{
+  "pingdom": {
+    "username": "YOUR_USERNAME",
+    "password": "YOUR_PASSWORD",
+    "key": "YOUR_API_KEY",
+    "checks": [
+      "CHECK_ID_1",
+      "CHECK_ID_2"
+    ]
+  },
+  "graphite": {
+    "host": "YOUR_SERVER",
+    "port": "2003",
+    "prefix": "pingdom"
+  }
+}

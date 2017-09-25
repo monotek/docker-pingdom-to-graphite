@@ -1,5 +1,8 @@
 #!/bin/bash
 
 if [ "$1" = 'pingdom-to-graphite' ]; then
-    pingdom-to-graphite
+    while true; do
+	pingdom-to-graphite update
+	sleep 60
+    done
 fi
