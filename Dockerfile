@@ -1,7 +1,7 @@
 FROM ruby:2.3.1
 
 # install
-gem install pingdom-to-graphite
+RUN gem install pingdom-to-graphite
 
 # create entrypoint
 COPY docker-entrypoint.sh /
