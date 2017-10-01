@@ -1,7 +1,13 @@
 FROM ruby:2.3.1
 
 # install
-RUN gem install pingdom-to-graphite
+#RUN gem install pingdom-to-graphite
+
+# install from altered sources
+RUN cd /opt \
+  && git clone https://github.com/monotek/pingdom-to-graphite.git -b fixmetricname \
+  && cd pingdom-to-graphite.git \
+  && bundle install
 
 # create entrypoint
 COPY docker-entrypoint.sh /
