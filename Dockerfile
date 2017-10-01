@@ -6,7 +6,7 @@ FROM ruby:2.3.1
 # install from altered sources
 RUN cd /opt \
   && git clone https://github.com/monotek/pingdom-to-graphite.git -b fixmetricname \
-  && cd pingdom-to-graphite.git \
+  && cd pingdom-to-graphite \
   && bundle install
 
 # create entrypoint
